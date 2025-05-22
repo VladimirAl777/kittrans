@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <title>КИТ ТРАНС - Доставка грузов</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header id="header">
+        <div class="container header-content">
+            <a href="#" class="logo">КИТ <span>ТРАНС</span></a>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#autopark">Автопарк</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Герой-баннер -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Доставка вашего груза - быстро и надежно</h1>
+            <a href="#contact" class="cta-button">Оставить заявку</a>
+        </div>
+    </section>
+
+    <!-- Наши услуги -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-subtitle">Мы предлагаем комплексные решения для транспортировки грузов любого объема и сложности</p>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="images/1.jpg" alt="Габаритные и негабаритные перевозки тралом">
+                    </div>
+                    <div class="service-content">
+                        <h3>ГАБАРИТНЫЕ И НЕГАБАРИТНЫЕ ПЕРЕВОЗКИ ТРАЛОМ</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="images/2.png" alt="Перевозка грузов">
+                    </div>
+                    <div class="service-content">
+                        <h3>ПЕРЕВОЗКА ГРУЗОВ</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="images/3.jpg" alt="Сопровождение грузов">
+                    </div>
+                    <div class="service-content">
+                        <h3>СОПРОВОЖДЕНИЕ ГРУЗОВ</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="images/4.jpg" alt="Подготовка специальных разрешений">
+                    </div>
+                    <div class="service-content">
+                        <h3>ПОДГОТОВКА СПЕЦ.РАЗРЕШЕНИЯ</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="images/5.jpg" alt="Страхование грузов">
+                    </div>
+                    <div class="service-content">
+                        <h3>СТРАХОВАНИЕ ГРУЗОВ</h3>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="images/6.png" alt="Обследование и разработка маршрутов">
+                    </div>
+                    <div class="service-content">
+                        <h3>ОБСЛЕДОВАНИЕ И РАЗРАБОТКА МАРШРУТОВ</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наши проекты -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Наши проекты</h2>
+            <p class="section-subtitle">Реализованные решения для наших клиентов</p>
+            
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="project-img">
+                            <img src="images/7.jpeg" class="d-block w-100" alt="Международные перевозки">
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="project-img">
+                            <img src="images/8.jpg" class="d-block w-100" alt="Складской комплекс">
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="project-img">
+                            <img src="images/9.jpg" class="d-block w-100" alt="Температурные перевозки">
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Автопарк -->
+    <section id="autopark" class="section">
+        <div class="container">
+            <h2 class="section-title">Наш автопарк</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/7.jpeg" alt="Грузовой автомобиль Man">
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Man</h3>
+                        <p>Инертные материалы и т.д</p>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/8.jpg" alt="Трактор JCB">
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Трактор JCB</h3>
+                        <p>Выполняет работы любой сложности(гидромолот)</p>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/9.jpg" alt="Грузовой автомобиль Man">
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Man</h3>
+                        <p>Инертные материалы и т.д</p>
+                    </div>
+                </div>
+
+
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/7.jpeg" alt="Грузовой автомобиль Man">
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Man</h3>
+                        <p>Инертные материалы и т.д</p>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/8.jpg" alt="Трактор JCB">
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Трактор JCB</h3>
+                        <p>Выполняет работы любой сложности(гидромолот)</p>
+                    </div>
+                </div>
+                
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="images/9.jpg" alt="Грузовой автомобиль Man">
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Man</h3>
+                        <p>Инертные материалы и т.д</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="advantages" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">ПРЕИМУЩЕСТВА</h2>
+            <p class="section-subtitle">Почему выбирают нас</p>
+            
+            <div class="advantages-list">
+                <!-- Преимущество 1 -->
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-4ecf-p-kartinki-galochka-v-kruzhochke-na-prozrach-19.png" alt="Галочка">
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Безопасность</h3>
+                        <p>Мы придаем высшую степень внимания безопасности груза во время перевозки. Соблюдение транспортных правил и норм безопасности: Мы тщательно следим за соблюдением всех транспортных правил и норм безопасности.</p>
+                    </div>
+                </div>
+                
+                <!-- Преимущество 2 -->
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-4ecf-p-kartinki-galochka-v-kruzhochke-na-prozrach-19.png" alt="Галочка">
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Конкурентоспособные цены</h3>
+                        <p>Мы предлагаем конкурентоспособные цены на наши услуги, сочетая их с высоким качеством. Мы стремимся предложить оптимальное соотношение цены и качества, чтобы вы получили максимальную ценность от нашего сотрудничества.</p>
+                    </div>
+                </div>
+                
+                <!-- Преимущество 3 -->
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-4ecf-p-kartinki-galochka-v-kruzhochke-na-prozrach-19.png" alt="Галочка">
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Гибкие условия и индивидуальный подход</h3>
+                        <p>Мы готовы предложить гибкие условия сотрудничества, адаптированные под ваши потребности. Мы можем предложить различные варианты транспорта, страховки груза, чтобы удовлетворить ваши требования.</p>
+                    </div>
+                </div>
+                
+                <!-- Преимущество 4 -->
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-4ecf-p-kartinki-galochka-v-kruzhochke-na-prozrach-19.png" alt="Галочка">
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Прозрачность и отчетность</h3>
+                        <p>Мы предоставляем прозрачную отчетность о каждом этапе перевозки, начиная от оформления заказа и заканчивая доставкой.</p>
+                    </div>
+                </div>
+
+                <!-- Преимущество 5 -->
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-4ecf-p-kartinki-galochka-v-kruzhochke-na-prozrach-19.png" alt="Галочка">
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Широкий выбор транспорта</h3>
+                        <p>Независимо от того, где находится ваш груз или куда он должен быть доставлен, у нас есть подходящий вид транспорта и возможность доставки в нужное место. Более 100+ единиц техники.</p>
+                    </div>
+                </div>
+
+                <!-- Преимущество 6 -->
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <img src="https://foni.papik.pro/uploads/posts/2024-10/foni-papik-pro-4ecf-p-kartinki-galochka-v-kruzhochke-na-prozrach-19.png" alt="Галочка">
+                    </div>
+                    <div class="advantage-content">
+                        <h3>Полный сервис</h3>
+                        <p>Мы предоставляем полный сервис в сфере грузоперевозок, включая организацию перевозки, таможенное оформление, страхование и другие сопутствующие услуги. Это позволяет вам сосредоточиться на своих бизнес-задачах, а мы возьмем на себя всю логистическую работу.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">О нас</h2>
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Мы - команда профессионалов, специализирующихся на удовлетворении потребностей компаний, индивидуальных предпринимателей и частных лиц в перевозке грузов.</p>
+                        <p>Наша миссия - обеспечивать надежную и эффективную доставку вашего груза в любую точку России.</p>
+                        <p>Свяжитесь с нами прямо сейчас, чтобы получить подробную консультацию и сделать первый шаг к успешной перевозке!</p>
+                        <a href="#contact" class="cta-button">Связаться с нами</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/10.jpg" alt="Команда КИТ ТРАНС">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма для связи -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Форма для связи</h2>
+            <p class="section-subtitle">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>КИТ ТРАНС</h3>
+                    <p>Доставка вашего груза - быстро и надежно</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Наши услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Грузоперевозки</a></li>
+                        <li><a href="#services">Логистика</a></li>
+                        <li><a href="#services">Складские услуги</a></li>
+                        <li><a href="#services">Таможенное оформление</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Транспортная, 15</p>
+                    <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-envelope"></i> info@kit-trans.ru</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 КИТ ТРАНС. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
