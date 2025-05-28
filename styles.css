@@ -682,21 +682,61 @@ footer {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    aspect-ratio: 16/9; /* Сохраняем соотношение сторон 16:9 */
+}
+
+#projectsCarousel .carousel-inner {
+    width: 100%;
+    height: 100%;
 }
 
 #projectsCarousel .carousel-item {
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 #projectsCarousel .project-img {
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Фон на случай, если изображение не заполняет полностью */
 }
 
 #projectsCarousel .project-img img {
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* Меняем cover на contain для полного отображения */
+    object-position: center;
+    max-width: 100%;
+    max-height: 100%;
 }
 
+/* Оптимизация для разных размеров экрана */
+@media (max-width: 992px) {
+    #projectsCarousel {
+        aspect-ratio: 4/3; /* Более квадратное соотношение для планшетов */
+    }
+}
+
+@media (max-width: 768px) {
+    #projectsCarousel {
+        aspect-ratio: 1/1; /* Квадратное для мобильных */
+    }
+    
+    #projectsCarousel .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+    
+    #projectsCarousel .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Остальные стили остаются без изменений */
 #projectsCarousel .carousel-caption {
     background: rgba(0, 0, 0, 0.7);
     left: 0;
@@ -704,16 +744,6 @@ footer {
     bottom: 0;
     padding: 1.5rem;
     text-align: left;
-}
-
-#projectsCarousel .carousel-caption h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-#projectsCarousel .carousel-caption p {
-    margin-bottom: 0;
-    font-size: 1rem;
 }
 
 #projectsCarousel .carousel-control-prev,
@@ -737,21 +767,6 @@ footer {
     border-radius: 50%;
     margin: 0 5px;
 }
-
-@media (max-width: 768px) {
-    #projectsCarousel .carousel-item {
-        height: 400px;
-    }
-    
-    #projectsCarousel .carousel-caption h3 {
-        font-size: 1.2rem;
-    }
-    
-    #projectsCarousel .carousel-caption p {
-        font-size: 0.9rem;
-    }
-}
-
 /* О нас */
 .about-content {
     max-width: 1200px;
